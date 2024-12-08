@@ -17,7 +17,7 @@ return [
 
     'services' => [
         // Temporary disabled until cache is implemented
-        // 'official' => 'https://cdn.coollabs.io/hostly/service-templates.json',
+        // 'official' => 'https://cdn.khulnasoft.com/hostly/service-templates.json',
         'official' => 'https://raw.githubusercontent.com/khulnasoft/hostly/main/templates/service-templates.json',
     ],
 

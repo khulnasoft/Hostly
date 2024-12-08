@@ -55,7 +55,7 @@ class UpdateHostly
         instant_remote_process(["docker pull -q ghcr.io/khulnasoft/hostly:{$this->latestVersion}"], $this->server, false);
 
         remote_process([
-            'curl -fsSL https://cdn.coollabs.io/hostly/upgrade.sh -o /data/hostly/source/upgrade.sh',
+            'curl -fsSL https://cdn.khulnasoft.com/hostly/upgrade.sh -o /data/hostly/source/upgrade.sh',
             "bash /data/hostly/source/upgrade.sh $this->latestVersion",
         ], $this->server);
     }

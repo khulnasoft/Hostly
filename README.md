@@ -1,4 +1,4 @@
-![Latest Release Version](https://img.shields.io/badge/dynamic/json?labelColor=grey&color=6366f1&label=Latest_released_version&url=https%3A%2F%2Fcdn.coollabs.io%2Fhostly%2Fversions.json&query=hostly.v4.version&style=for-the-badge
+![Latest Release Version](https://img.shields.io/badge/dynamic/json?labelColor=grey&color=6366f1&label=Latest_released_version&url=https%3A%2F%2Fcdn.khulnasoft.com%2Fhostly%2Fversions.json&query=hostly.v4.version&style=for-the-badge
 )
 
 [![Bounty Issues](https://img.shields.io/static/v1?labelColor=grey&color=6366f1&label=Algora&message=%F0%9F%92%8E+Bounty+issues&style=for-the-badge)](https://console.algora.io/org/khulnasoft/bounties/new)
@@ -18,7 +18,7 @@ For more information, take a look at our landing page at [hostly.khulnasoft.com]
 # Installation
 
 ```bash
-curl -fsSL https://cdn.coollabs.io/hostly/install.sh | bash
+curl -fsSL https://cdn.khulnasoft.com/hostly/install.sh | bash
 ```
 You can find the installation script source [here](./scripts/install.sh).
 

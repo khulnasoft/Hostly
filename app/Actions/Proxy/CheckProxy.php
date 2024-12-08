@@ -98,7 +98,7 @@ class CheckProxy
                 $connection = @fsockopen($ip, $port);
                 if (is_resource($connection) && fclose($connection)) {
                     if ($fromUI) {
-                        throw new \Exception("Port $port is in use.<br>You must stop the process using this port.<br>Docs: <a target='_blank' href='https://hostly.khulnasoft.com/docs'>https://hostly.khulnasoft.com/docs</a><br>Discord: <a target='_blank' href='https://coollabs.io/discord'>https://coollabs.io/discord</a>");
+                        throw new \Exception("Port $port is in use.<br>You must stop the process using this port.<br>Docs: <a target='_blank' href='https://hostly.khulnasoft.com/docs'>https://hostly.khulnasoft.com/docs</a><br>Discord: <a target='_blank' href='https://khulnasoft.com/discord'>https://khulnasoft.com/discord</a>");
                     } else {
                         return false;
                     }

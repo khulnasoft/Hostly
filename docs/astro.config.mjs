@@ -162,7 +162,7 @@ export default defineConfig({
           attrs: {
             defer: true,
             "data-domain": "hostly.khulnasoft.com/docs",
-            src: "https://analytics.coollabs.io/js/script.js",
+            src: "https://analytics.khulnasoft.com/js/script.js",
           },
         },
       ],

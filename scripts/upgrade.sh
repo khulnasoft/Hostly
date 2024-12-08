@@ -2,7 +2,7 @@
 ## Do not modify this file. You will lose the ability to autoupdate!
 
 VERSION="13"
-CDN="https://cdn.coollabs.io/hostly"
+CDN="https://cdn.khulnasoft.com/hostly"
 LATEST_IMAGE=${1:-latest}
 LATEST_HELPER_VERSION=${2:-latest}
 

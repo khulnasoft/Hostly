@@ -4,7 +4,7 @@ export default function myImageLoader({ src, width, quality }) {
     const isLocal = !src.startsWith('http');
     const query = new URLSearchParams();
 
-    const imageOptimizationApi = 'https://images.coollabs.io/o';
+    const imageOptimizationApi = 'https://images.khulnasoft.com/o';
     // Your NextJS application URL
     const baseUrl = 'https://xoos0kk.khulnasoft.dev';
 

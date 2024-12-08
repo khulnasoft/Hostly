@@ -4,7 +4,7 @@ An open-source & self-hostable image optimization service, a drop-in replacement
 
 ## Cloud with free global CDN
 
-The cloud version, with free global CDN and simple pricing available here: https://images.coollabs.io
+The cloud version, with free global CDN and simple pricing available here: https://images.khulnasoft.com
 
 ## Try it out 
 
@@ -12,7 +12,7 @@ The cloud version, with free global CDN and simple pricing available here: https
 - Add the `height` query parameter to see the image crop on the fly.
 - Add the `quality` query parameter to see the image quality change on the fly.
 
-https://image.coollabs.io/image/https://cdn.coollabs.io/images/image1.jpg?width=500
+https://image.khulnasoft.com/image/https://cdn.khulnasoft.com/images/image1.jpg?width=500
 
 ## Includes
 1. Next Image Transformation API.

@@ -194,7 +194,7 @@ function get_route_parameters(): array
 function get_latest_sentinel_version(): string
 {
     try {
-        $response = Http::get('https://cdn.coollabs.io/hostly/versions.json');
+        $response = Http::get('https://cdn.khulnasoft.com/hostly/versions.json');
         $versions = $response->json();
 
         return data_get($versions, 'hostly.sentinel.version');

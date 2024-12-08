@@ -23,7 +23,7 @@
                         if (checkNumber > 5) {
                             this.popups.realtime = true;
                             console.error(
-                                'Hostly could not connect to its real-time service. This will cause unusual problems on the UI if not fixed! Please check the related documentation (https://hostly.khulnasoft.com/docs/knowledge-base/cloudflare/tunnels) or get help on Discord (https://coollabs.io/discord).)'
+                                'Hostly could not connect to its real-time service. This will cause unusual problems on the UI if not fixed! Please check the related documentation (https://hostly.khulnasoft.com/docs/knowledge-base/cloudflare/tunnels) or get help on Discord (https://khulnasoft.com/discord).)'
                             );
                         }
 
@@ -46,7 +46,7 @@
                             Please ensure that you have opened the
                             <a class="underline" href='https://hostly.khulnasoft.com/docs/knowledge-base/server/firewall'
                                 target='_blank'>required ports</a> or get
-                            help on <a class="underline" href='https://coollabs.io/discord' target='_blank'>Discord</a>.
+                            help on <a class="underline" href='https://khulnasoft.com/discord' target='_blank'>Discord</a>.
                         </div>
                     </x-slot:description>
                     <x-slot:button-text @click="disableRealtime()">

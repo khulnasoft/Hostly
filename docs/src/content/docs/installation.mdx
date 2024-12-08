@@ -15,7 +15,7 @@ import { Aside, Steps } from '@astrojs/starlight/components';
 <Aside type="tip">
   Quick Installation (recommended):
   ```bash
-  curl -fsSL https://cdn.coollabs.io/hostly/install.sh | bash
+  curl -fsSL https://cdn.khulnasoft.com/hostly/install.sh | bash
   ```
   For detailed setup instructions, including firewall configuration and prerequisites, see the [Quick Installation Guide](#1-quick-installation-recommended) below.
 </Aside>
@@ -115,14 +115,14 @@ For the following things:
 2. Run the Installation Script
 
    ```bash
-   curl -fsSL https://cdn.coollabs.io/hostly/install.sh | bash
+   curl -fsSL https://cdn.khulnasoft.com/hostly/install.sh | bash
    ```
    > View the [Scripts Source Code](https://github.com/khulnasoft/hostly/blob/main/scripts/install.sh)
 
     <Aside type="note">
     If you are not running the script as the `root` user, switch to the `root` user or use the script with `sudo`:
     ```bash
-    curl -fsSL https://cdn.coollabs.io/hostly/install.sh | sudo bash
+    curl -fsSL https://cdn.khulnasoft.com/hostly/install.sh | sudo bash
     ```
     </Aside>
 
@@ -199,10 +199,10 @@ For users who prefer more control over the installation process.
     Copy the `docker-compose.yml`, `docker-compose.prod.yml`, `.env.production` & `upgrade.sh` files from Hostly's CDN to `/data/hostly/source`.
 
     ```bash
-    curl -fsSL https://cdn.coollabs.io/hostly/docker-compose.yml -o /data/hostly/source/docker-compose.yml
-    curl -fsSL https://cdn.coollabs.io/hostly/docker-compose.prod.yml -o /data/hostly/source/docker-compose.prod.yml
-    curl -fsSL https://cdn.coollabs.io/hostly/.env.production -o /data/hostly/source/.env
-    curl -fsSL https://cdn.coollabs.io/hostly/upgrade.sh -o /data/hostly/source/upgrade.sh
+    curl -fsSL https://cdn.khulnasoft.com/hostly/docker-compose.yml -o /data/hostly/source/docker-compose.yml
+    curl -fsSL https://cdn.khulnasoft.com/hostly/docker-compose.prod.yml -o /data/hostly/source/docker-compose.prod.yml
+    curl -fsSL https://cdn.khulnasoft.com/hostly/.env.production -o /data/hostly/source/.env
+    curl -fsSL https://cdn.khulnasoft.com/hostly/upgrade.sh -o /data/hostly/source/upgrade.sh
     ```
 
 8. Set Permissions
