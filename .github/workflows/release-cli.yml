@@ -1,0 +1,27 @@
+name: Release CLI
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: write
+
+jobs:
+  release-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      -
+        name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v5
+        with:
+          distribution: goreleaser
+          version: ${{ env.GITHUB_REF_NAME }}
+          args: release --clean
+          workdir: ./hostly-cli/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
