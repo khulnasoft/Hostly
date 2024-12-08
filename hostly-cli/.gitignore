@@ -2,3 +2,4 @@ hostly-cli
 hostly
 cli
 config.json
+dist/*
