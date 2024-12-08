@@ -1,6 +1,7 @@
 name: pocketbase-release
 
 on:
+  workflow_dispatch:
   release:
     types: [released]
 
