@@ -6,7 +6,7 @@ export default function myImageLoader({ src, width, quality }) {
 
     const imageOptimizationApi = 'https://images.coollabs.io/o';
     // Your NextJS application URL
-    const baseUrl = 'https://xoos0kk.heyandras.dev';
+    const baseUrl = 'https://xoos0kk.khulnasoft.dev';
 
     const fullSrc = `${baseUrl}${src}`;
 

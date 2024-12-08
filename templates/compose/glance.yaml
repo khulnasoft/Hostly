@@ -41,7 +41,7 @@ services:
                     - type: twitch-channels
                       channels:
                         - theprimeagen
-                        - heyandras
+                        - khulnasoft
                         - cohhcarnage
                         - christitustech
                         - blurbs

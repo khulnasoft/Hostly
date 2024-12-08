@@ -188,7 +188,7 @@ export default defineConfig({
         blueSky: "https://bsky.app/profile/hostly.khulnasoft.com",
         "x.com": "https://x.com/hostlyio",
         discord: "https://discord.gg/hostly",
-        twitch: "https://twitch.tv/heyandras",
+        twitch: "https://twitch.tv/khulnasoft",
       },
       sidebar: [
         {
