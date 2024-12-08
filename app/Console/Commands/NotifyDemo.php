@@ -70,7 +70,7 @@ class NotifyDemo extends Command
 
         ask(<<<'HTML'
         <div class="mr-1">
-            In which manner you wish a <strong class="text-hostly">coolified</strong> notification?
+            In which manner you wish a <strong class="text-hostly">hostly</strong> notification?
         </div>
         HTML, ['email', 'slack', 'discord', 'telegram']);
     }

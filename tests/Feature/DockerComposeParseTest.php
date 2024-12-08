@@ -65,7 +65,7 @@ use Symfony\Component\Yaml\Yaml;
 //         'preview_url_template' => '{{pr_id}}.{{domain}}',
 //         'uuid' => 'bcoowoookw0co4cok4sgc4k8s',
 //         'repository_project_id' => 603035348,
-//         'git_repository' => 'khulnasoft/hostly-examples',
+//         'git_repository' => 'khulnasoft/hostly/tree/main/examples',
 //         'git_branch' => 'main',
 //         'base_directory' => '/docker-compose-test',
 //         'docker_compose_location' => 'docker-compose.yml',
@@ -83,7 +83,7 @@ use Symfony\Component\Yaml\Yaml;
 //         'git_type' => 'github',
 //         'application_id' => $this->application->id,
 //         'pull_request_id' => 1,
-//         'pull_request_html_url' => 'https://github.com/khulnasoft/hostly-examples/pull/1',
+//         'pull_request_html_url' => 'https://github.com/khulnasoft/hostly/tree/main/examples/pull/1',
 //     ]);
 //     $this->serviceYaml = '
 // services:

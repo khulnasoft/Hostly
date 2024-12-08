@@ -76,7 +76,7 @@ class GithubPrivateRepositoryDeployKey extends Component
     public function mount()
     {
         if (isDev()) {
-            $this->repository_url = 'https://github.com/khulnasoft/hostly-examples';
+            $this->repository_url = 'https://github.com/khulnasoft/hostly/tree/main/examples';
         }
         $this->parameters = get_route_parameters();
         $this->query = request()->query();

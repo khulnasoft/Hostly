@@ -13,7 +13,7 @@
                 </div>
                 <div>
                     For example application deployments, checkout <a class="underline dark:text-white"
-                        href="https://github.com/khulnasoft/hostly-examples/" target="_blank">Hostly
+                        href="https://github.com/khulnasoft/hostly/tree/main/examples/" target="_blank">Hostly
                         Examples</a>.
                 </div>
                 @if ($branchFound)
