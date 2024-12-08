@@ -240,4 +240,4 @@ To add a new service to Hostly, please refer to our documentation:
 ### Contributing to Documentation
 
 To contribute to the Hostly documentation, please refer to this guide:
-[Contributing to the Hostly Documentation](https://github.com/khulnasoft/documentation-hostly/blob/main/CONTRIBUTING.md)
+[Contributing to the Hostly Documentation](https://github.com/khulnasoft/hostly/tree/main/docs/blob/main/CONTRIBUTING.md)

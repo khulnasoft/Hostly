@@ -184,7 +184,7 @@ export default defineConfig({
         src: "./src/assets/hostly-transparent.svg",
       },
       social: {
-        github: "https://github.com/khulnasoft/documentation-hostly",
+        github: "https://github.com/khulnasoft/hostly/tree/main/docs",
         blueSky: "https://bsky.app/profile/hostly.khulnasoft.com",
         "x.com": "https://x.com/hostlyio",
         discord: "https://discord.gg/hostly",
