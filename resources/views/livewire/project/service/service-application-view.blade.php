@@ -24,10 +24,10 @@
                     @if ($application->required_fqdn)
                         <x-forms.input required placeholder="https://app-hostly.khulnasoft.com" label="Domains"
                             id="application.fqdn"
-                            helper="You can specify one domain with path or more with comma. You can specify a port to bind the domain to.<br><br><span class='text-helper'>Example</span><br>- http://app-hostly.khulnasoft.com,https://cloud.hostly.io/dashboard<br>- http://app-hostly.khulnasoft.com/api/v3<br>- http://app-hostly.khulnasoft.com:3000 -> app-hostly.khulnasoft.com will point to port 3000 inside the container. "></x-forms.input>
+                            helper="You can specify one domain with path or more with comma. You can specify a port to bind the domain to.<br><br><span class='text-helper'>Example</span><br>- http://app-hostly.khulnasoft.com,https://cloud.hostly.khulnasoft.com/dashboard<br>- http://app-hostly.khulnasoft.com/api/v3<br>- http://app-hostly.khulnasoft.com:3000 -> app-hostly.khulnasoft.com will point to port 3000 inside the container. "></x-forms.input>
                     @else
                         <x-forms.input placeholder="https://app-hostly.khulnasoft.com" label="Domains" id="application.fqdn"
-                            helper="You can specify one domain with path or more with comma. You can specify a port to bind the domain to.<br><br><span class='text-helper'>Example</span><br>- http://app-hostly.khulnasoft.com,https://cloud.hostly.io/dashboard<br>- http://app-hostly.khulnasoft.com/api/v3<br>- http://app-hostly.khulnasoft.com:3000 -> app-hostly.khulnasoft.com will point to port 3000 inside the container. "></x-forms.input>
+                            helper="You can specify one domain with path or more with comma. You can specify a port to bind the domain to.<br><br><span class='text-helper'>Example</span><br>- http://app-hostly.khulnasoft.com,https://cloud.hostly.khulnasoft.com/dashboard<br>- http://app-hostly.khulnasoft.com/api/v3<br>- http://app-hostly.khulnasoft.com:3000 -> app-hostly.khulnasoft.com will point to port 3000 inside the container. "></x-forms.input>
                     @endif
                 @endif
                 <x-forms.input required

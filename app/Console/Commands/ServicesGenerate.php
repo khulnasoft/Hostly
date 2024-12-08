@@ -57,7 +57,7 @@ class ServicesGenerate extends Command
         $this->info("Processing $file");
 
         $documentation = $data->get('documentation');
-        $documentation = $documentation ? $documentation.'?utm_source=hostly.io' : 'https://hostly.khulnasoft.com/docs';
+        $documentation = $documentation ? $documentation.'?utm_source=hostly.khulnasoft.com' : 'https://hostly.khulnasoft.com/docs';
 
         $json = Yaml::parse($content);
         $compose = base64_encode(Yaml::dump($json, 10, 2));

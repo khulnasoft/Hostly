@@ -176,7 +176,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	rootCmd.PersistentFlags().StringVarP(&Token, "token", "", "", "Token for authentication (https://app.hostly.io/security/api-tokens)")
+	rootCmd.PersistentFlags().StringVarP(&Token, "token", "", "", "Token for authentication (https://app.hostly.khulnasoft.com/security/api-tokens)")
 	rootCmd.PersistentFlags().StringVarP(&Fqdn, "host", "", "", "Hostly instance hostname")
 
 	rootCmd.PersistentFlags().BoolVarP(&JsonMode, "json", "", false, "Json mode")
@@ -214,7 +214,7 @@ func initConfig() {
 			viper.Set("instances", []interface{}{map[string]interface{}{
 				"name":    "cloud",
 				"default": true,
-				"fqdn":    "https://app.hostly.io",
+				"fqdn":    "https://app.hostly.khulnasoft.com",
 				"token":   "",
 			},
 			})

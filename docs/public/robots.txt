@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hostly.khulnasoft.com/docs/sitemap-index.xml

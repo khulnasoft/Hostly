@@ -1,0 +1,75 @@
+---
+title: "Redirects"
+head:
+  - tag: "meta"
+    attrs:
+        property: "og:title"
+        content: "How to configure redirects with Traefik in Hostly"
+description: "A guide to configure redirects with Traefik in Hostly"
+---
+
+# Redirects with Traefik
+
+This guide will help you to configure redirects in Hostly with Traefik.
+
+The configuration is slightly different for `Standard Applications` and `Docker Compose` based applications/one-click services.
+
+## Standard Applications
+
+- You need to set both FQDNs for your resource, so for example: `hostly.khulnasoft.com,www.hostly.khulnasoft.com`
+- Add a unique middleware to your resource.
+
+### www -> non-www
+
+```bash {4,8-10}
+# A similar line is already defined.
+traefik.http.routers.<unique_router_name>.rule=Host(`www.hostly.khulnasoft.com`) && PathPrefix(`/`)
+
+# You need to add the middleware to the router.
+traefik.http.routers.<unique_router_name>.middlewares=example-middleware
+
+# If you have multiple middlewares, you need to add them comma separated.
+# traefik.http.routers.<unique_router_name>.middlewares=gzip,example-middleware
+#
+traefik.http.middlewares.example-middleware.redirectregex.regex=^(http|https)://www\.(.+)
+traefik.http.middlewares.example-middleware.redirectregex.replacement=${1}://${2}
+traefik.http.middlewares.example-middleware.redirectregex.permanent=true
+```
+
+### non-www -> www
+
+```bash {4,8-10}
+# A similar line is already defined.
+traefik.http.routers.<unique_router_name>.rule=Host(`hostly.khulnasoft.com`) && PathPrefix(`/`)
+
+# You need to add the middleware to the router.
+traefik.http.routers.<unique_router_name>.middlewares=example-middleware
+
+# If you have multiple middlewares, you need to add them comma separated.
+# traefik.http.routers.<unique_router_name>.middlewares=gzip,example-middleware
+#
+traefik.http.middlewares.example-middleware.redirectregex.regex=^(http|https)://(?:www\.)?(.+)
+traefik.http.middlewares.example-middleware.redirectregex.replacement=${1}://www.${2}
+traefik.http.middlewares.example-middleware.redirectregex.permanent=true
+```
+
+## Docker Compose based Applications & one-click Services
+
+- You need to set both FQDNs for your resource, so for example: `hostly.khulnasoft.com,www.hostly.khulnasoft.com`
+- You only need add the middleware to the router.
+
+### www -> non-www
+
+```bash
+traefik.http.middlewares.example-middleware.redirectregex.regex=^(http|https)://www\.(.+)
+traefik.http.middlewares.example-middleware.redirectregex.replacement=${1}://${2}
+traefik.http.middlewares.example-middleware.redirectregex.permanent=true
+```
+
+### non-www -> www
+
+```bash
+traefik.http.middlewares.example-middleware.redirectregex.regex=^(http|https)://(?:www\.)?(.+)
+traefik.http.middlewares.example-middleware.redirectregex.replacement=${1}://www.${2}
+traefik.http.middlewares.example-middleware.redirectregex.permanent=true
+```

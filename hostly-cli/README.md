@@ -1,4 +1,4 @@
-# CLI for [Hostly](https://hostly.io) API
+# CLI for [Hostly](https://hostly.khulnasoft.com) API
 
 ## Installation
 

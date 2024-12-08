@@ -237,7 +237,7 @@ class Init extends Command
             return;
         }
         try {
-            Http::get("https://undead.hostly.io/v4/alive?appId=$id&version=$version");
+            Http::get("https://undead.hostly.khulnasoft.com/v4/alive?appId=$id&version=$version");
             echo "[2]: Sending live signal!\n";
         } catch (\Throwable $e) {
             echo "[2]: Error in sending live signal: {$e->getMessage()}\n";
