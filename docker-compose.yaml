@@ -1,0 +1,49 @@
+services:
+  hostly:
+    image: ghcr.io/khulnasoft/hostly:${TAG:-latest}
+    restart: always
+    container_name: hostly
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host
+    volumes:
+      - 'hostly-local-backup:/app/backups'
+      - 'hostly-db:/app/db'
+      - 'hostly-logs:/app/logs'
+      - 'hostly-ssl-certs:/app/ssl'
+      - 'hostly-traefik-letsencrypt:/etc/traefik/acme'
+      - 'hostly-letsencrypt:/etc/letsencrypt'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    env_file:
+      - '.env'
+    networks:
+      - hostly-infra
+  fluent-bit:
+    image: ghcr.io/khulnasoft/fluent-bit:1.0.0
+    container_name: hostly-fluentbit
+    volumes:
+      - 'hostly-logs:/app/logs'
+    networks:
+      - hostly-infra
+networks:
+  hostly-infra:
+    attachable: true
+    name: hostly-infra
+
+volumes:
+  hostly-local-backup:
+    name: hostly-local-backup
+  hostly-logs:
+    name: hostly-logs
+  hostly-db:
+    name: hostly-db
+  hostly-pgdb:
+    name: hostly-pgdb
+  hostly-ssl-certs:
+    name: hostly-ssl-certs
+  hostly-letsencrypt:
+    name: hostly-letsencrypt
+  hostly-traefik-letsencrypt:
+    name: hostly-traefik-letsencrypt
